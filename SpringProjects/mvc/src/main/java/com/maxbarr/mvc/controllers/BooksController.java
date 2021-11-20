@@ -47,8 +47,8 @@ public class BooksController {
 	
 	@RequestMapping("/books/{id}")
 	public String getBookById(Model model, @PathVariable("id") Long id) {
-		bookService.findBook(id);
-		
+		Book book = bookService.findBook(id);
+		model.addAttribute("book", book);
 		
 //		String title = "title";
 //		String description = "description";
@@ -60,6 +60,6 @@ public class BooksController {
 //		model.addAttribute("language", language);
 //		model.addAttribute("numberOfPages", numberOfPages);
 		
-        return "/books/{id}";
+        return "books/show.jsp";
 	}
 }
