@@ -46,10 +46,38 @@ public class BooksController {
 	}
 	
 	@RequestMapping("/books/{id}")
-	public String getBookById(Model model, @PathVariable("id") Long id) {
+	public String show(Model model, @PathVariable("id") Long id) {
 		Book book = bookService.findBook(id);
 		model.addAttribute("book", book);
-		
         return "books/show.jsp";
 	}
+	
+	@RequestMapping("/books/{id}/edit")
+	public String edit(@PathVariable("id") Long id, Model model) {
+		Book book = bookService.findBook(id);
+		model.addAttribute("book", book);
+		return "/books/edit.jsp";
+	}
+	
+	@RequestMapping(value="/books/{id}", method=RequestMethod.PUT)
+	public String update(@Valid @ModelAttribute("book") Book book, BindingResult result) {
+		if (result.hasErrors()) {
+			return "books/edit.jsp";
+		} else {
+			System.out.println(book.getId());
+			System.out.println(book.getTitle());
+			System.out.println(book.getDescription());
+			System.out.println(book.getLanguage());
+			System.out.println(book.getNumberOfPages());
+			bookService.updateBook(book);
+			return "redirect:/books";
+		}
+	}
+	
+	@RequestMapping(value="/books/{id}", method=RequestMethod.DELETE)
+	public String destroy(@PathVariable("id") Long id) {
+		bookService.deleteBook(id);
+		return "redirect:/books";
+	}
+	
 }
