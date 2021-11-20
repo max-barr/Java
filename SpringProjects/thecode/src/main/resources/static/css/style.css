@@ -1,0 +1,17 @@
+
+#container {
+	height: 500px;
+	width: 1000px;
+	margin: auto;
+}
+
+button {
+	background-color: yellow;
+	color: black;
+	padding: 5px;
+	margin: 10px auto;
+}
+
+#error {
+	color: red;
+}
