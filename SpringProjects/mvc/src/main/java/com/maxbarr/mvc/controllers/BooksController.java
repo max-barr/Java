@@ -50,16 +50,6 @@ public class BooksController {
 		Book book = bookService.findBook(id);
 		model.addAttribute("book", book);
 		
-//		String title = "title";
-//		String description = "description";
-//		String language = "language";
-//		String numberOfPages = "numberOfPages";
-//		
-//		model.addAttribute("title", title);
-//		model.addAttribute("description", description);
-//		model.addAttribute("language", language);
-//		model.addAttribute("numberOfPages", numberOfPages);
-		
         return "books/show.jsp";
 	}
 }
