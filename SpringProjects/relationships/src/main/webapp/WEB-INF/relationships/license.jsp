@@ -15,9 +15,9 @@
 	    		<form:errors path="person"></form:errors>
 	    		<form:select path="person">
 	    			<c:forEach var="person" items="${persons}">
-			        <form:option value= "${person.id}" label="${person.firstName} ${person.lastName}"/>
-		   		</c:forEach>
-			</form:select>
+			        	<form:option value= "${person.id}" label="${person.firstName} ${person.lastName}"/>
+		   			</c:forEach>
+				</form:select>
 	    </p>
 	    <p>
 	        <form:label path="state">State</form:label>

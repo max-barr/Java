@@ -8,12 +8,12 @@
 		<version>2.6.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.maxbarr.relationships</groupId>
-	<artifactId>relationships</artifactId>
+	<groupId>com.maxbarr.dojooverflow</groupId>
+	<artifactId>dojooverflow</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>relationships</name>
-	<description>Practice using relationships</description>
+	<name>dojooverflow</name>
+	<description>Practice using relationships, validations</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -59,6 +59,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.hibernate.validator</groupId>
+        	<artifactId>hibernate-validator</artifactId>
         </dependency>
 	</dependencies>
 
