@@ -14,12 +14,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.maxbarr.authentication.models.User;
 import com.maxbarr.authentication.services.UserService;
+import com.maxbarr.authentication.validator.UserValidator;
 
 @Controller
 public class UserController {
 
 	@Autowired
 	private UserService userService;
+	
+	@Autowired
+	private UserValidator userValidator;
 	
 //	GET request for registration page
 	
@@ -39,8 +43,10 @@ public class UserController {
 	
 	@PostMapping("/registration")
 	public String registerUser(@Valid @ModelAttribute("user") User user, BindingResult result, HttpSession session) {
-//		If the result has errors, return the registration page (don't worry about validations yet)
+//		If the result has errors, return the registration page 
 //		Else, save the user in the database, save their user id in session, and redirect them to the home route
+		
+		userValidator.validate(user, result);
 		
 		if (result.hasErrors()) {
 			return "registrationPage.jsp";
