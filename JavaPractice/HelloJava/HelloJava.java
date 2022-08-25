@@ -31,5 +31,35 @@ public class HelloJava {
         } else {
             System.out.println("I am full.");
         }
+
+        // Operators: + , - , * , / , % , ++ , += , -= , *= , -- , /=
+        // Logical operators: && , || 
+
+        // Calling methods from below
+        greeting();
+        greeting("Steve");
+        greeting("Jimmy", "Python");
+        add(2,2);
+    }
+    
+    // Methods
+    // Cannot create another method within the main method, but you call it there.
+    
+    public static void greeting() {
+        System.out.println("Hello there! Welcome to Java!");
+    }
+
+    public static void greeting(String name) {
+        System.out.printf("Welcome to Java, %s!%n", name);
+    }
+
+    public static void greeting(String name, String stack) {
+        System.out.printf("Hello, %s. Welcome to %s.%n", name, stack);
+    }
+
+    // Method returns an integer
+    public static int add(int a, int b) {
+        System.out.println(a + b);
+        return a + b;
     }
 }
