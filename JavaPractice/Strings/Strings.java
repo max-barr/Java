@@ -24,6 +24,40 @@ public class Strings {
 
         // 4. IndexOf: The indexOf method searches left-to-right inside the given string for a "target" string. The indexOf() method returns the index number where the target string is first found or -1 if the target is not found.
 
-        
+        String football = "Are you ready for some football?";
+
+        int a = football.indexOf("you"); 
+        // a is 4
+        System.out.println(a);
+
+        int b = football.indexOf("so");
+        // b is 18
+        System.out.println(b);
+
+        int c = football.indexOf("z");
+        // c is -1 because it is not found
+        System.out.println(c);
+
+        // 5. Trim: The trim() method removes any trailing or leading white spaces from the string.
+
+        String sentence = "   Get rid of the space!      ";
+        System.out.println(sentence.trim());
+
+        // 6. Uppercase and Lowercase: The String class provides methods to lowercase and uppercase strings.
+
+        String h = "HELLO";
+        String w = "world";
+        System.out.println(h.toLowerCase());
+        System.out.println(w.toUpperCase());
+
+        // 7. Equality: We can compare the equality of a string in two ways. Do they refer to the exact same object, or do they have the same exact sequence of characters.
+
+        String x = new String("word");
+        String y = new String("word");
+        // False. They are not the same exact object.
+        System.out.println(x == y);
+        // True. Same exact characters.
+        System.out.println(x.equals(y));
+
     }
 }
