@@ -1,6 +1,6 @@
-public class importDemoTest {
+public class ImportDemoTest {
     public static void main(String[] args) {
-        importDemo iD = new importDemo();
+        ImportDemo iD = new ImportDemo();
         String currentDate = iD.getCurrentDate();
     }
 }

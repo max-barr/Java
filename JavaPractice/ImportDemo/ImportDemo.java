@@ -1,5 +1,6 @@
+// Importing the Date class
 import java.util.Date;
-public class importDemo {
+public class ImportDemo {
     public String getCurrentDate() {
         Date date = new Date();
         System.out.println("Today's date is " + date);

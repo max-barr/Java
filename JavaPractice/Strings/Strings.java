@@ -1,7 +1,7 @@
 public class Strings {
     public static void main (String[] args) {
 
-        String myVariableName = "My string's value";
+        // String myVariableName = "My string's value";
 
         // -------- METHODS ---------
 
