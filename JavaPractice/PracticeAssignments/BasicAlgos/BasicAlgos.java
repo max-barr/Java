@@ -36,6 +36,26 @@ public class BasicAlgos {
 
     // Write a method (sets of instructions) that takes any array and prints the maximum value in the array. Your method should also work with a given array that has all negative numbers (e.g. [-3, -5, -7]), or even a mix of positive numbers, negative numbers and zero.
     public void printMax(int[] arr) {
-        
+        int max = arr[0];
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] < arr[i + 1]) {
+                max = arr[i+1];
+            }
+        }
+        System.out.println(max);
     }
+
+    // Write a method that creates an array 'y' that contains all the odd numbers between 1 to 255. When the method is done, 'y' should have the value of [1, 3, 5, 7, ... 255].
+    public void oddArray() {
+        ArrayList<Integer> y = new ArrayList<Integer>();
+        for (int i = 1; i <= 255; i++) {
+            if (i % 2 != 0) {
+                y.add(i);
+            }
+        }
+        System.out.println(y);
+    }
+
+    // Write a method that takes an array, and prints the AVERAGE of the values in the array. For example for an array [2, 10, 3], your method should print an average of 5. Again, make sure you come up with a simple base case and write instructions to solve that base case first, then test your instructions for other complicated cases.
+    
 }

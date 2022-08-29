@@ -10,6 +10,11 @@ public class BasicAlgosTest {
         // int[] testArray = {1,2,3,4,5,6};
         // tester.iterateArray(testArray);
 
+        // int[] testArray = {-3,0,4,1,6,7,-5};
+        // tester.printMax(testArray);
+
+        // tester.oddArray();
+
         
     }
 }
