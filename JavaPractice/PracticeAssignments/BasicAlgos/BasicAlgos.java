@@ -57,5 +57,40 @@ public class BasicAlgos {
     }
 
     // Write a method that takes an array, and prints the AVERAGE of the values in the array. For example for an array [2, 10, 3], your method should print an average of 5. Again, make sure you come up with a simple base case and write instructions to solve that base case first, then test your instructions for other complicated cases.
-    
+    public void arrayAverage(int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        // Typecast sum as a double
+        double average = (double)sum / arr.length;
+        System.out.println(average);
+    }
+
+    // Write a method that takes an array and returns the number of values in that array whose value is greater than a given value y. For example, if array = [1, 3, 5, 7] and y = 3, after your method is run it will print 2 (since there are two values in the array that are greater than 3).
+    public int greaterThanY(int[] arr, int y) {
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > y) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // Given any array x, say [1, 5, 10, -2], write a method that multiplies each value in the array by itself. When the method is done, the array x should have values that have been squared, say [1, 25, 100, 4].
+    public void squareValues(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] *= arr[i];
+        }
+    }
+
+    // Given any array x, say [1, 5, 10, -2], write a method that replaces any negative number with the value of 0. When the method is done, x should have no negative values, say [1, 5, 10, 0].
+    public void eliminateNegatives(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                arr[i] = 0;
+            }
+        }
+    }
 }
