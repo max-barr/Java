@@ -19,6 +19,7 @@ public class ListsOfExceptions {
                 System.out.println("Something went wrong");
                 System.out.println("Error occurred at index: " + i);
                 System.out.println("Object value: " + myList.get(i));
+                System.out.println("Reason: " + e);
             }
             System.out.println("Looping continues...");
         }
