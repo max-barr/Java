@@ -4,6 +4,20 @@ public class Vehicle {
     private int numberOfWheels;
     private String color;
 
+    // Constructor methods to add attributes on instantiation
+    public Vehicle(String color, int num) {
+        this.color = color;
+        this.numberOfWheels = num;
+    }
+    public Vehicle() {
+    }
+    public Vehicle(String color) {
+        this.color = color;
+    }
+    public Vehicle(int num) {
+        this.numberOfWheels = num;
+    }
+
     // Getters
     public int getNumberOfWheels() {
         return numberOfWheels;
