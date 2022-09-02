@@ -8,6 +8,9 @@ public class GreeterTest {
         System.out.println(greetingWithName);
         System.out.println(greeting);
 
+        // Static method does not use Greeter object
+        Greeter.testGreeting("Max");
+
         // if (greeting.equals("Hello World") || greetingWithName.equals("Hello Max")) {
         //     System.out.println("Test successful");
         // } else {

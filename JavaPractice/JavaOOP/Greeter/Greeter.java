@@ -1,5 +1,5 @@
 public class Greeter {
-    
+
     private String createGreeting(String toBeGreeted) {
         return "Hello, " + toBeGreeted + "!";
     }
@@ -8,6 +8,10 @@ public class Greeter {
     }
     public String greet() {
         return createGreeting("World");
+    }
+    // Static method does not need to be instantiated
+    public static void testGreeting(String name) {
+        System.out.println("This is a test, " + name);
     }
 
 }
