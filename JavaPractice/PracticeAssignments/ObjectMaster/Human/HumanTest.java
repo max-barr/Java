@@ -25,5 +25,7 @@ public class HumanTest {
 
         will.fireball(bill);
         System.out.println(bill.getHealth());
+
+        sarah.meditate();
     }
 }
