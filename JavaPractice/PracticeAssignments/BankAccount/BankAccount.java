@@ -27,7 +27,23 @@ public class BankAccount {
     }
 
     // Class methods
-    
+    public void depositChecking(double amount) {
+        setCheckingBalance(getCheckingBalance() + amount);
+        totalMoney += amount;
+    }
+    public void depositSavings(double amount) {
+        setSavingsBalance(getSavingsBalance() + amount);
+        totalMoney += amount;
+    }
+    public void withdrawChecking(double amount) {
+        setCheckingBalance(getCheckingBalance() - amount);
+        totalMoney -= amount;
+    }
+    public void withdrawSavings(double amount) {
+        setSavingsBalance(getSavingsBalance() - amount);
+        totalMoney -= amount;
+    }
+
 
     public void viewAccounts() {
         System.out.println("Checking Balance: " + getCheckingBalance());
