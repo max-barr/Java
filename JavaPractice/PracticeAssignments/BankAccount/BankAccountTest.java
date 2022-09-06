@@ -8,6 +8,7 @@ public class BankAccountTest {
         a.withdrawChecking(150);
         a.depositSavings(1000);
         a.withdrawSavings(250);
+        b.depositChecking(100);
         System.out.println(a.getCheckingBalance());
         System.out.println(a.getSavingsBalance());
 
