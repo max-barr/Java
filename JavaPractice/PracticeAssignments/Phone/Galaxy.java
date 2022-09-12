@@ -6,7 +6,7 @@ public class Galaxy extends Phone implements Ringable {
 
     @Override
     public String ring() {
-        return "Your Galaxy phone is ringing.";
+        return getRingTone();
     }
 
     @Override
@@ -16,6 +16,6 @@ public class Galaxy extends Phone implements Ringable {
 
     @Override
     public void displayInfo() {
-        System.out.printf("Version: %s%n Battery: %d%n Carrier: %s%n Ring Tone: %s", getVersionNumber(), getBatteryPercentage(), getCarrier(), getRingTone());
+        System.out.printf("Version: %s%nBattery: %d%nCarrier: %s%nRing Tone: %s%n", getVersionNumber(), getBatteryPercentage(), getCarrier(), getRingTone());
     }
 }
