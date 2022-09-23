@@ -1,14 +1,16 @@
 package com.maxbarr.jspdemo.controllers;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class MainController {
 
 	@GetMapping("/")
-	public String index() {
-		return "Hello there!";
+	public String index(Model model) {
+		model.addAttribute("location", "Portland");
+		return "test.jsp";
 	}
 	
 	
