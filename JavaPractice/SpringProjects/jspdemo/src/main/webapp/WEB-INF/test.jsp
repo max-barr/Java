@@ -4,8 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Testing this JSP file</title>
+	<meta charset="UTF-8">
+	<title>Testing this JSP file</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<h2>Hello JSP!</h2>
