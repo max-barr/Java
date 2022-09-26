@@ -16,9 +16,11 @@
 	<body>
 		<div class="container">
 			<h1 style="text-align: center">Welcome</h1>
-			<span style="width: 100%">
-
-			</span>
+			<div class="box"></div>
+			<div class="container" style="display: flex">
+				<div><h3>Date Template</h3></div>
+				<div style="margin-left: auto"><h3>Time Template</h3></div>
+			</div>
 		</div>
 	</body>
 </html>
