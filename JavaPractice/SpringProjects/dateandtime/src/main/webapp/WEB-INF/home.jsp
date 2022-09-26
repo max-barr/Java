@@ -18,8 +18,8 @@
 			<h1 style="text-align: center">Welcome</h1>
 			<div class="box"></div>
 			<div class="container" style="display: flex">
-				<div><h3>Date Template</h3></div>
-				<div style="margin-left: auto"><h3>Time Template</h3></div>
+				<div><h3><a href="/date">Date Template</a></h3></div>
+				<div style="margin-left: auto"><h3><a href="/time">Time Template</a></h3></div>
 			</div>
 		</div>
 	</body>
