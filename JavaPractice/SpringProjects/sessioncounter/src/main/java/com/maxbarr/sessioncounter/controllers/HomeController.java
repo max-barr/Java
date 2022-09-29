@@ -30,7 +30,7 @@ public class HomeController {
 	@GetMapping("/reset")
 	public String resetCount(HttpSession session) {
 		session.invalidate();
-		return "redirect:/count";
+		return "redirect:/";
 	}
 
 }

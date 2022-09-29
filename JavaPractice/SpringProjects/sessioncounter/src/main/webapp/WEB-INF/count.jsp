@@ -18,6 +18,7 @@
 		<h1 style="text-align: center">What's the count?</h1>
 		<div class="container" style="text-align: center; margin: 100px 0px">
 			<p>You have visited the home page <c:out value="${countToShow}"/> times.</p>
+			<a href="/reset">Reset</a><br/>
 			<a href="/">Home</a>
 		</div>
 	</div>
