@@ -26,5 +26,11 @@ public class HomeController {
 		model.addAttribute("countToShow", currentCount);
 		return "count.jsp";
 	}
+	
+	@GetMapping("/reset")
+	public String resetCount(HttpSession session) {
+		session.invalidate();
+		return "redirect:/count";
+	}
 
 }
