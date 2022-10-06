@@ -10,13 +10,18 @@ public class MainController {
 	@GetMapping("/")
 	public String home() {
 		
+		return "home.jsp";
 	}
 	
 	
 	@GetMapping("/password")
+	public String accept() {
+		
+		return "dashboard.jsp";
+	}
 	
 	
-	@PostMapping("/")
+	@PostMapping("/login")
 	public String enterPassword() {
 		
 		return "redirect:/password";
