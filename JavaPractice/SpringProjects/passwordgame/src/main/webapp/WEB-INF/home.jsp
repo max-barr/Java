@@ -17,7 +17,7 @@
 	<div class="container">
 		<h1 style="text-align:center">Enter the password</h1>
 		<form method="POST" action="/login">
-			<input type="text" class="form-control"><br>
+			<input type="text" class="form-control" name="password"><br>
 			<button type="button"class="btn btn-primary">Try it</button><br>
 			<c:out value="${error}"/>
 		</form>
