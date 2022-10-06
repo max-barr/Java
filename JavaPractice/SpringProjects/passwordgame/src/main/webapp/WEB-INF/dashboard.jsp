@@ -15,7 +15,8 @@
 </head>
 <body>
 	<div class="container">
-		
+		<h1 style="text-align: center">Congratulations! That is correct!</h1><br>
+		<a href="/">Back</a>
 	</div>
 </body>
 </html>
