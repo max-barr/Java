@@ -3,8 +3,8 @@ package com.maxbarr.passwordgame.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 public class MainController {
 	
 //	home page route
-	@GetMapping("/")
+	@RequestMapping("/")
 	public String home(@ModelAttribute("error") String error) {
 		return "home.jsp";
 	}
@@ -31,7 +31,7 @@ public class MainController {
 	}
 	
 //	Post route to grab data from form
-	@PostMapping("/login")
+	@RequestMapping(path="/login", method=RequestMethod.POST)
 	public String login(@RequestParam(value="password") String password) {
 		if (password.equals("code")) {
 			System.out.println("That is correct");
