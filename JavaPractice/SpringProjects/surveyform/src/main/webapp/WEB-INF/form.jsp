@@ -14,6 +14,11 @@
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+	<div class="container">
+		<form method="POST" action="/submit">
+			<label for="formControlInput" class="form-label">Email address</label>
+			<input type="email" class="form-control" id="formControlInput" placeholder="name@example.com">
+		</form>
+	</div>
 </body>
 </html>
