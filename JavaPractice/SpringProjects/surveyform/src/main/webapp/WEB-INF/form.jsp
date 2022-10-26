@@ -37,6 +37,10 @@
 			  <option value="4">Golf</option>
 			  <option value="5">Tennis</option>
 			</select>
+			<!-- Text area -->
+			<label for="textarea">Comment (Optional)</label>
+			<textarea class="form-control" id="textarea" style="height: 100px"></textarea><br>
+			<button class="btn btn-primary">Submit</button>
 		</form>
 	</div>
 </body>
