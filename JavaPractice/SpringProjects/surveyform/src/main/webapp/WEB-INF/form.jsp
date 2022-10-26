@@ -20,12 +20,22 @@
 			<label for="formControlInput" class="form-label">Your Name:</label>
 			<input type="email" class="form-control" id="formControlInput">
 			<!-- Select -->
-			<label for="select" class="form-label">Location:</label>
-			<select class="form-select" aria-label="Default select" id="select">
+			<label for="select1" class="form-label">Location:</label>
+			<select class="form-select" aria-label="Default select" id="select1">
 			  <option selected=""></option>
 			  <option value="1">Boston</option>
 			  <option value="2">Seattle</option>
 			  <option value="3">Los Angeles</option>
+			</select>
+			<!-- Select -->
+			<label for="select2" class="form-label">Favorite Sport:</label>
+			<select class="form-select" aria-label="Default select" id="select2">
+			  <option selected=""></option>
+			  <option value="1">Football</option>
+			  <option value="2">Baseball</option>
+			  <option value="3">Basketball</option>
+			  <option value="4">Golf</option>
+			  <option value="5">Tennis</option>
 			</select>
 		</form>
 	</div>
