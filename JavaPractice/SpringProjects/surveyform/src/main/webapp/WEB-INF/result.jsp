@@ -5,15 +5,21 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Home</title>
+	<title>Results</title>
 	<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
 	<!-- YOUR own local CSS -->
-	<link rel="stylesheet" href="/css/style.css"/>
+	<link rel="stylesheet" href="style.css"/>
 	<!-- For any Bootstrap that uses JS or jQuery-->
 	<script src="/webjars/jquery/jquery.min.js"></script>
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+	<div class="container">
+		<h1>Your Information</h1>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+	</div>
 </body>
 </html>
