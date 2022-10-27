@@ -23,19 +23,19 @@
 			<label for="select1" class="form-label">Location:</label>
 			<select class="form-select" aria-label="Default select" id="select1" name="location">
 			  <option selected=""></option>
-			  <option value="1">Boston</option>
-			  <option value="2">Seattle</option>
-			  <option value="3">Los Angeles</option>
+			  <option value="Boston">Boston</option>
+			  <option value="Seattle">Seattle</option>
+			  <option value="Los Angeles">Los Angeles</option>
 			</select>
 			<!-- Select -->
 			<label for="select2" class="form-label">Favorite Sport:</label>
 			<select class="form-select" aria-label="Default select" id="select2" name="sport">
 			  <option selected=""></option>
-			  <option value="1">Football</option>
-			  <option value="2">Baseball</option>
-			  <option value="3">Basketball</option>
-			  <option value="4">Golf</option>
-			  <option value="5">Tennis</option>
+			  <option value="Football">Football</option>
+			  <option value="Baseball">Baseball</option>
+			  <option value="Basketball">Basketball</option>
+			  <option value="Golf">Golf</option>
+			  <option value="Tennis">Tennis</option>
 			</select>
 			<!-- Text area -->
 			<label for="textarea">Comment (Optional)</label>
