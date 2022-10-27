@@ -18,10 +18,10 @@
 		<h1>Submit Your Information</h1>
 		<form method="POST" action="/submit">
 			<label for="formControlInput" class="form-label">Your Name:</label>
-			<input type="email" class="form-control" id="formControlInput">
+			<input type="email" class="form-control" id="formControlInput" name="name">
 			<!-- Select -->
 			<label for="select1" class="form-label">Location:</label>
-			<select class="form-select" aria-label="Default select" id="select1">
+			<select class="form-select" aria-label="Default select" id="select1" name="location">
 			  <option selected=""></option>
 			  <option value="1">Boston</option>
 			  <option value="2">Seattle</option>
@@ -29,7 +29,7 @@
 			</select>
 			<!-- Select -->
 			<label for="select2" class="form-label">Favorite Sport:</label>
-			<select class="form-select" aria-label="Default select" id="select2">
+			<select class="form-select" aria-label="Default select" id="select2" name="sport">
 			  <option selected=""></option>
 			  <option value="1">Football</option>
 			  <option value="2">Baseball</option>
@@ -39,7 +39,7 @@
 			</select>
 			<!-- Text area -->
 			<label for="textarea">Comment (Optional)</label>
-			<textarea class="form-control" id="textarea" style="height: 100px"></textarea><br>
+			<textarea class="form-control" id="textarea" style="height: 100px" name="comment"></textarea><br>
 			<button class="btn btn-primary">Submit</button>
 		</form>
 	</div>
