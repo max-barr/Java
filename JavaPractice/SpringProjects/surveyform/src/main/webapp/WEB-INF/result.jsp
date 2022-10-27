@@ -16,7 +16,7 @@
 <body>
 	<div class="container">
 		<h1>Your Information</h1>
-		<p></p>
+		<p>Name: <c:out value="${name}"/></p>
 		<p></p>
 		<p></p>
 		<p></p>

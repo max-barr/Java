@@ -18,7 +18,7 @@
 		<h1>Submit Your Information</h1>
 		<form method="POST" action="/submit">
 			<label for="formControlInput" class="form-label">Your Name:</label>
-			<input type="email" class="form-control" id="formControlInput" name="name">
+			<input type="text" class="form-control" id="formControlInput" name="name">
 			<!-- Select -->
 			<label for="select1" class="form-label">Location:</label>
 			<select class="form-select" aria-label="Default select" id="select1" name="location">
