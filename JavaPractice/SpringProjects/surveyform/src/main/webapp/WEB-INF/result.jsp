@@ -20,6 +20,7 @@
 		<p>Location: <c:out value="${location}"/></p>
 		<p>Favorite sport: <c:out value="${sport}"/></p>
 		<p>Comment: <c:out value="${comment}"/></p>
+		<a href="/" class="btn btn-primary">Go Back</a>
 	</div>
 </body>
 </html>
