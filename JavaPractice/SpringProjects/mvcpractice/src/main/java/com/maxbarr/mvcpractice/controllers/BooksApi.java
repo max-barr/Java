@@ -20,21 +20,26 @@ public class BooksApi {
 		this.bookService = bookService;
 	}
 	
+//	Show all books
 	@GetMapping("/api/books")
 	public List<Book> index() {
 		return bookService.allBooks();
 	}
 	
+//	Create a new book
 	@PostMapping("/api/books")
 	public Book create(@RequestParam(value="title") String title, @RequestParam(value="description") String desc, @RequestParam(value="language") String lang, @RequestParam(value="pages") Integer numOfPages) {
 		Book book = new Book(title, desc, lang, numOfPages);
 		return bookService.createBook(book);
 	}
 	
+//	Show single book
 	@GetMapping("/api/books/{id}")
 	public Book show(@PathVariable("id") Long id) {
 		Book book = bookService.findBook(id);
 		return book;
 	}
+	
+	
 
 }
