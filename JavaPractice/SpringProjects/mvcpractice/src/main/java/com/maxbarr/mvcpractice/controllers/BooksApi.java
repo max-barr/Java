@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -38,6 +39,19 @@ public class BooksApi {
 	public Book show(@PathVariable("id") Long id) {
 		Book book = bookService.findBook(id);
 		return book;
+	}
+	
+//	Update a book
+	@PutMapping("/api/books/{id}")
+	public Book update(@PathVariable("id") Long id, @RequestParam(value="title") String title, @RequestParam(value="description") String desc, @RequestParam(value="language") String lang, @RequestParam(value="pages") Integer numOfPages) {
+		Book book = bookService.updateBook(id, title, desc, lang, numOfPages);
+		return book;
+	}
+	
+//	Delete a book
+	@DeleteMapping("/api/books/{id}")
+	public void destroy(@PathVariable("id") Long id) {
+		bookService.deleteBook(id);
 	}
 	
 	
