@@ -16,8 +16,17 @@
 <body>
 	<h1>All Books</h1>
 	<table>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Description</th>
+				<th>Language</th>
+				<th>Pages</th>
+			</tr>
+		</thead>
+		<tbody>
 		
-	
+		</tbody>
 	</table>
 
 </body>
