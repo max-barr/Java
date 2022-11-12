@@ -14,6 +14,11 @@
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<h1>All Books</h1>
+	<table>
+		
+	
+	</table>
 
 </body>
 </html>
