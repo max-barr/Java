@@ -14,6 +14,30 @@
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<h1>New Book</h1>
+	<form action="/books" method="POST" modelAttribute="book">
+		<p>
+	        <label path="title">Title</label>
+	        <errors path="title"/>
+	        <input path="title"/>
+    	</p>
+    	<p>
+	        <label path="description">Title</label>
+	        <errors path="description"/>
+	        <input path="description"/>
+    	</p>
+    	<p>
+	        <label path="language">Title</label>
+	        <errors path="language"/>
+	        <input path="language"/>
+    	</p>
+    	<p>
+	        <label path="numberOfPages">Title</label>
+	        <errors path="numberOfPages"/>
+	        <input path="numberOfPages"/>
+    	</p>
+    	<input type="submit" value="Submit"/>
+	</form>
 
 </body>
 </html>
